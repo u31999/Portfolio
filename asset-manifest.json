@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.49a20988.css",
-    "main.js": "/Portfolio/static/js/main.3723182c.js",
+    "main.js": "/Portfolio/static/js/main.dceb5c01.js",
     "static/js/108.9e83c753.chunk.js": "/Portfolio/static/js/108.9e83c753.chunk.js",
     "static/js/27.0ce90960.chunk.js": "/Portfolio/static/js/27.0ce90960.chunk.js",
     "static/media/shoes-store.png": "/Portfolio/static/media/shoes-store.89a3a190a2f2bb7fc505.png",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.49a20988.css",
-    "static/js/main.3723182c.js"
+    "static/js/main.dceb5c01.js"
   ]
 }
