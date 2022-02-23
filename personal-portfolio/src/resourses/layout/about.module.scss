@@ -1,0 +1,96 @@
+@import "root";
+
+.mainContainer {
+	@include mainContainer;
+	.navContainer {
+		background-color: $blackColor;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: solid 3px #04c2c9;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 3;
+		nav {
+			flex: 1;
+			width: 70%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-evenly;
+			margin-left: 20px;
+
+			a {
+				color: white;
+				text-decoration: none;
+				letter-spacing: 1px;
+			}
+			a:hover {
+				color: $purpleColor;
+			}
+			a.active {
+				color: $purpleColor;
+			}
+			a.focuse {
+				color: $purpleColor;
+			}
+			.active {
+				color: $purpleColor !important;
+			}
+		}
+	}
+}
+
+.aboutContainer {
+	margin: 0;
+	flex: 1;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+
+	.sectionTitle {
+		@include topTitle;
+	}
+	.sectionText {
+		width: 70%;
+		margin: auto;
+		text-align: center;
+		color: $offWhiteBlack;
+		font-weight: 700;
+	}
+	.skillsIconsContainer {
+		display: flex;
+		width: 70%;
+		justify-content: space-evenly;
+		margin: auto;
+		flex-wrap: wrap;
+	}
+	.icon {
+		flex: 1 0 25%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		div:last-child {
+			font-weight: 900;
+			letter-spacing: 2px;
+			text-shadow: black 1px 1px 1px;
+		}
+	}
+	.theIcon {
+		font-size: 60px;
+	}
+}
+
+//mediaQuerys
+@media only screen and (max-width: $iphone-SE) {
+	.navContainer nav a {
+		font-size: 0.8rem;
+	}
+}

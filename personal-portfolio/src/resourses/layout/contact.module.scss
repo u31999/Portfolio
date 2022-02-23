@@ -1,0 +1,172 @@
+@import "root";
+
+.mainContainer {
+	height: 120%;
+	flex: 1;
+	background-color: $footerColor;
+	display: flex;
+	flex-direction: column;
+
+	.topContact {
+		margin-bottom: 1.3rem;
+	}
+	.middleContact {
+		.sectionTitle {
+			@include topTitle;
+			div:first-child {
+				color: white;
+			}
+			div:last-child {
+				div {
+					border-top-color: $HeaderBorderColor;
+				}
+			}
+		}
+		.subTitle {
+			color: $HeaderBorderColor;
+			letter-spacing: 1px;
+			text-shadow: black 1px 1px 1px;
+			margin: 1rem;
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			width: 40%;
+			gap: 0.1rem;
+			margin: auto;
+			input {
+				background-color: #1e242c;
+				border: none;
+				padding: 0.3rem;
+			}
+			input:focus,
+			input:active,
+			input:focus-visible {
+				color: white;
+				border: none;
+				outline-style: none;
+				box-shadow: none;
+			}
+			textarea {
+				height: 5rem;
+				background-color: #1e242c;
+				border: none;
+				padding: 0.3rem;
+			}
+			textarea:focus,
+			textarea:active,
+			textarea:focus-visible {
+				border: none;
+				color: white;
+				outline-style: none;
+				box-shadow: none;
+			}
+			.formDiv {
+				display: flex;
+				margin-top: 0.3rem;
+				.message {
+					visibility: hidden;
+					flex: 1;
+					font-size: 9px;
+					font-size: 900;
+					color: rgb(127 199 40);
+					text-shadow: black 1px 1px 1px;
+				}
+				.submit {
+					padding: 5px 15px;
+					letter-spacing: 1px;
+					color: white;
+					border: 0.5px white solid;
+					border-radius: 0.5rem;
+					text-shadow: black 1px 1px 1px;
+				}
+				.submit:hover {
+					cursor: pointer;
+					color: $HeaderBorderColor;
+					border-color: $HeaderBorderColor;
+				}
+			}
+		}
+	}
+	.bottomContact {
+		margin-top: 1.7rem;
+		background-color: $blackColor;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		.angleContainer {
+			a {
+				position: relative;
+				top: -50%;
+				font-size: 1.5rem;
+				padding: 0px 6px;
+				color: white;
+				background-color: $purpleColor;
+			}
+		}
+		.icons {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			color: $offWhiteBlack;
+			svg {
+				font-size: 2rem;
+				padding: 0px;
+				background-color: $blackColor;
+				path {
+					color: $orangeColor;
+					opacity: 0.5;
+				}
+			}
+			svg:hover {
+				cursor: pointer;
+				path {
+					opacity: 0.8;
+				}
+			}
+		}
+		.copyRight {
+			font-size: 12px;
+			letter-spacing: 2px;
+			margin-top: 0.5rem;
+			margin-bottom: 1rem;
+			color: #8f9aa7;
+			font-family: monospace;
+
+			span {
+				color: $purpleColor;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $iphone-SE) {
+	.mainContainer {
+		height: 60%;
+
+		.bottomContact {
+			height: 20%;
+			position: relative;
+			bottom: 0%;
+			flex: 1;
+		}
+	}
+}
+@media only screen and (max-width: "375px") {
+	.mainContainer {
+		height: 100%;
+	}
+}
+@media only screen and (min-device-width: "820px") and (max-device-width: "1180px") {
+	.mainContainer {
+		height: 50%;
+	}
+}
+
+@media only screen and (min-device-width: "600px") and (max-device-width: "1024px") {
+	.mainContainer {
+		height: 100%;
+	}
+}

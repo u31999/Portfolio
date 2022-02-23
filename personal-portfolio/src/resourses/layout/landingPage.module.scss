@@ -1,0 +1,116 @@
+@import "root";
+.mainContainer {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	#tsparticles {
+		flex: 1;
+		height: 100%;
+		width: 100%;
+		min-height: 100%;
+	}
+}
+
+.textContainer {
+	position: absolute;
+	z-index: 1;
+	width: 70%;
+	height: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.text {
+		flex: 1;
+		color: $whiteColor;
+		font-size: 30px;
+		font-weight: 900;
+		line-height: 1.5;
+		letter-spacing: 2px;
+		opacity: 0;
+		animation: changeOpacity 1000ms $cubicLiner forwards;
+		span {
+			opacity: 0;
+			color: $purpleColor;
+			animation: changeOpacity 400ms $cubicLiner 300ms forwards;
+		}
+	}
+	.btnContainer {
+		flex: 1;
+		display: flex;
+		opacity: 0;
+		animation: changeOpacity 800ms $cubicLiner 800ms forwards;
+		button {
+			flex: 1;
+			width: 50%;
+			height: 20%;
+			background-color: transparent;
+			color: white;
+			padding: 25px 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 15px;
+			letter-spacing: 2px;
+			text-shadow: black 3px 3px 3px;
+			border: outset 2px $purpleColor;
+			font-weight: 900;
+			font-size: 20px;
+			transition: all 500ms ease;
+			a {
+				color: white;
+				text-decoration: none;
+				transition: all 500ms ease;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 15px;
+			}
+			span {
+				margin-top: 2.5%;
+				transform: rotate(-90deg);
+				color: $purpleColor;
+				transition: all 500ms ease;
+			}
+		}
+		button:hover {
+			cursor: pointer;
+			a {
+				color: $purpleColor;
+			}
+			span {
+				transform: rotate(0deg);
+				color: white;
+			}
+		}
+	}
+}
+
+//mediaQuerys
+@media only screen and (max-width: $iphone-SE) {
+	.textContainer {
+		gap: 20px;
+	}
+	.btnContainer {
+		button {
+			font-size: 0.85rem !important;
+		}
+	}
+}
+
+@media only screen and (max-width: $galaxy-Fold) {
+	.textContainer {
+		.text {
+			font-size: 25px !important;
+		}
+	}
+	.btnContainer {
+		button {
+			font-size: 0.7rem !important;
+		}
+	}
+}
