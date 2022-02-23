@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a9f8185d.css",
-    "main.js": "/Portfolio/static/js/main.f27200f1.js",
-    "static/js/415.183d370e.chunk.js": "/Portfolio/static/js/415.183d370e.chunk.js",
-    "static/js/787.44c92f1d.chunk.js": "/Portfolio/static/js/787.44c92f1d.chunk.js",
+    "main.css": "/Portfolio/static/css/main.49a20988.css",
+    "main.js": "/Portfolio/static/js/main.3723182c.js",
+    "static/js/108.9e83c753.chunk.js": "/Portfolio/static/js/108.9e83c753.chunk.js",
+    "static/js/27.0ce90960.chunk.js": "/Portfolio/static/js/27.0ce90960.chunk.js",
     "static/media/shoes-store.png": "/Portfolio/static/media/shoes-store.89a3a190a2f2bb7fc505.png",
     "static/media/starbux-clone.png": "/Portfolio/static/media/starbux-clone.a65188c2341d183bc513.png",
     "static/media/pokemon-memory.png": "/Portfolio/static/media/pokemon-memory.468f044c49c525ad6921.png",
@@ -19,14 +19,10 @@
     "static/media/kabnan-board.png": "/Portfolio/static/media/kabnan-board.f96c45ae2755e63bce6e.png",
     "static/media/calculater.png": "/Portfolio/static/media/calculater.cb6bf6f5a25975ce64af.png",
     "static/media/tic-tac-toe.png": "/Portfolio/static/media/tic-tac-toe.468c2a5ed9f1a9cb39ed.png",
-    "index.html": "/Portfolio/index.html",
-    "main.a9f8185d.css.map": "/Portfolio/static/css/main.a9f8185d.css.map",
-    "main.f27200f1.js.map": "/Portfolio/static/js/main.f27200f1.js.map",
-    "415.183d370e.chunk.js.map": "/Portfolio/static/js/415.183d370e.chunk.js.map",
-    "787.44c92f1d.chunk.js.map": "/Portfolio/static/js/787.44c92f1d.chunk.js.map"
+    "index.html": "/Portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.a9f8185d.css",
-    "static/js/main.f27200f1.js"
+    "static/css/main.49a20988.css",
+    "static/js/main.3723182c.js"
   ]
 }
