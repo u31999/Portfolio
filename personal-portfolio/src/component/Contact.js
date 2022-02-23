@@ -6,7 +6,7 @@ import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const url = {
     github:'https://github.com/u31999',
-    linkedin:'linkedin.com/in/ahmed-hassan-elzain/'
+    linkedin:'https://www.linkedin.com/in/ahmed-hassan-elzain/'
 }
 
 const Contact = () => {
