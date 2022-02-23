@@ -1,7 +1,8 @@
 import Particles from "react-tsparticles";
 
 const Particle = () => {
-    const options=  {
+    const particleParms=  {
+      fpsLimit: 40,
         background: {
         color: "#0b032d",
       },
@@ -12,25 +13,18 @@ const Particle = () => {
       },
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
           onHover: {
             enable: true,
             mode: "repulse",
           },
           resize: true,
         },
-        modes: {
+       modes: {
           bubble: {
             distance: 400,
             duration: 2,
             opacity: 0.8,
             size: 40,
-          },
-          push: {
-            quantity: 4,
           },
           repulse: {
             distance: 200,
@@ -45,7 +39,7 @@ const Particle = () => {
         },
         links: {
           color: "#ffffff",
-          distance: 150,
+          distance: 70,
           enable: true,
           opacity: 0.5,
           width: 1,
@@ -56,9 +50,9 @@ const Particle = () => {
         move: {
           direction: "none",
           enable: true,
-          outMode: "bounce",
+         outMode: "bounce",
           random: false,
-          speed: 6,
+          speed: 4,
           straight: false,
         },
         number: {
@@ -75,15 +69,13 @@ const Particle = () => {
           type: "circle",
         },
         size: {
-          random: true,
-          value: 5,
+          random: false,
         },
       },
     };
         
-      
     return(
-        <Particles options={options} />
+        <Particles options={particleParms} />
     )
 }
 
